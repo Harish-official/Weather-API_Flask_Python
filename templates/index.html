@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../static/styles.css" />
+
+    <!-------------------------------- FONT GOOGLE ------------------------------------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa&family=Ubuntu:wght@700&display=swap&family=Poppins"
+      rel="stylesheet"
+    />
+
+    <!--------------------------------------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Reporter</title>
+  </head>
+  <!--------------------------------------------------------------------------------------------------->
+  <!-- <img src="../static/bg-img.jpg" alt="image" class="background-img" /> -->
+  <body>
+    <div class="wrapper">
+    <form action="{{url_for('Home')}}" method="post">
+      <div class="search-bar">
+        <div class="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="Search the City Name.."
+            name = "city-name"
+          />
+        </div>
+    </form>
+      </div>
+      <div class="date-city-container">
+        <p class="city">{{report["city"]}}, {{report["country"]}}.</p>
+        <Date class="date">{{date_string}}</Date>
+      </div>
+      <div class="container">
+        <h1 class="temperature">{{report["temp"]}}°c</h1>
+        <p class="climate">{{report["weather"]}}</p>
+      </div>
+    </div>
+  </body>
+</html>

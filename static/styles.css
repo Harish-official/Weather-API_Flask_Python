@@ -1,0 +1,138 @@
+body {
+  /* background-color: rgba(146, 58, 228, 0.8); */
+  text-align: center;
+  background-image: url("../static/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #570a57cd; */
+}
+
+.background-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  margin: 20px auto;
+  width: 250px;
+  height: 150px;
+  background-color: #ffffff57;
+  border-radius: 25px;
+  border: 0.5px solid rgba(0, 0, 0, 0.753);
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.temperature {
+  color: #a100ffff;
+  /* color: rgba(172, 85, 219, 0.959); */
+  font-family: "Ubuntu";
+  font-weight: 900;
+  font-size: 75px;
+  text-align: center;
+  margin: 32px auto;
+}
+
+.climate {
+  color: rgba(229, 229, 236, 0.945);
+  font-size: 50px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.city {
+  color: rgb(92, 17, 232);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.date {
+  color: rgba(27, 24, 29, 0.626);
+  font-family: "Changa";
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.date-city-container {
+  margin: 10px 15px;
+}
+
+.wrapper {
+  width: 98vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  width: 100%;
+  /* position: relative; */
+  display: flex;
+}
+
+.searchTerm {
+  font-family: "poppins";
+  font-size: medium;
+  width: 100%;
+  border: 3px solid #7f12d3;
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #fefefe;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.search-bar {
+  width: 100%;
+}
+
+.error-message {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  width: 98vw;
+  height: 96vh;
+}
+
+.error-text {
+  font-family: "Ubuntu";
+  color: #fefefe;
+  font-weight: 800;
+}
+
+.myButton {
+  box-shadow: -2px 1px 37px 9px #00000076;
+  background-color: #8a33db;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #6d0ce3;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    height: 100vh;
+  }
+}
